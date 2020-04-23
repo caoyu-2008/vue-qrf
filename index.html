@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- start: Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>admin</title>
+    <meta name="曹宇的演示admin制作工程" content="">
+    <meta name="keyword" content="vue快速复制">
+    <!-- end: Meta -->
+
+    <!-- start: Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- end: Mobile Specific -->
+
+    <link rel="stylesheet" type="text/css" href="module/common/css/default.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="icon" href="./vue-element-admin/favicon.ico" />
+    <title>首页 - Vue Element Admin</title>
+    <link href="./vue-element-admin/static/css/admin-libs.css" rel="stylesheet" />
+    <link href="./vue-element-admin/static/css/app.admin.css" rel="stylesheet" />
+    <script async="" src="https://www.google-analytics.com/analytics.js" charset="utf8"></script>
+    <link rel="stylesheet" type="text/css" href="./vue-element-admin/static/css/admin-chunk.css" />
+    <script>
+        _325_dev_env = {tag:true};
+    </script>
+</head>
+<body>
+    <div id="_325_rightPanel"></div>
+    <div id="_325_svgPublic1"></div>
+    <div id="_325_indexQRF" class="app-wrapper openSidebar">
+        <div id="_325_directory" class="sidebar-container"></div>
+        <div id="_325_base" class="main-container hasTagsView">
+            <div id="_325_base_head">
+                <div id="_325_base_head_navbar"></div>
+                <div id="_325_base_head_tags"></div>
+            </div>
+            <div id="_325_base_bartext"></div>
+            <section id="_325_base_index" class="app-main"></section>
+            <section id="_325_base_documentation" class="app-main"></section>
+            <section id="_325_base_guide" class="app-main"></section>
+        </div>
+    </div>
+    <div id="_325_menuShow"></div>
+</body>
+<!--<script src="module/common/js/libs/_325Burying.min.js">-->
+<!--</script>-->
+<!--<script>-->
+<!--_325_BURYING("_325_indexQRF","_325-var",1);-->
+<!--</script>-->
+<script src="module/common/js/libs/md5.js"></script>
+<script src="module/common/js/libs/Math.uuid.js"></script>
+<script src="module/common/js/libs/_325Module-3.3.min.js"></script>
+<script src="module/common/js/libs/_325Dom-1.2.min.js"></script>
+
+<script>
+    document.body.onclick = function() {
+        _325_runEffCancel();
+    }
+    _325.loads([
+        "rightPanel/component.js",
+        "svgPublic1/component.js",
+        "menuShow/component.js",
+        "directory/component.js",
+        "base/head/navbar/component.js",
+        "base/head/tags/component.js",
+        "base/bartext/component.js"],function(ret,retFunction){
+        location.href = "#/base/index";
+    });
+</script>
+
+<script>
+    _325.checkNetwork = true;
+    var _325_2983405 = true;
+    _325.loadCtrlErr = function(){
+        if(_325_2983405){
+            _325_2983405 = false;
+        }
+        else return;
+        setTimeout(function(){_325_2983405 = true;},3000);
+        console.log("enter loadCtrlErr");
+        var firstRoute = _325.getFirstRoute();
+        var isFirstRoute = _325.isFirstRoute();
+        console.log(firstRoute,isFirstRoute);
+        if(isFirstRoute){//如果是初始路由
+            alert("您的网络异常");
+        }
+        else{
+            alert("您的网络异常");
+            _325.goBack();
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,1 @@
+module.exports = new _325_DOM("_325_" + _325.ScopeId);

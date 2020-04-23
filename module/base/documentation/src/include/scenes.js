@@ -1,0 +1,1 @@
+module.exports = _325.Scope.scenes = {};

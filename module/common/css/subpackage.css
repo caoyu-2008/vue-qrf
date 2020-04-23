@@ -1,0 +1,385 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome-webfont.eot'), url('fonts/fontawesome-webfont.woff') format('woff'), url('fonts/fontawesome-webfont.ttf') format('truetype'), url('fonts/fontawesome-webfont.svg') format('svg'), url('fonts/FontAwesome.otf');
+}
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  /*清除默认样式*/
+  padding: 0;
+  height: 100%;
+}
+body {
+  background: #e9ebec;
+  color: #34383c;
+  border: 0;
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.428571429;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul {
+  margin: 0 -10px;
+  border: 0;
+  padding-bottom: 1px;
+  font-size: 14px;
+  white-space: nowrap;
+  padding-left: 0;
+  list-style: none;
+}
+ul:before {
+  display: table;
+  content: " ";
+}
+ul li {
+  position: relative;
+  display: block;
+  text-align: -webkit-match-parent;
+  font-size: 14px;
+  white-space: nowrap;
+}
+ul li .dropmenu,
+ul li .submenu {
+  margin: 0;
+  width: 200px;
+  height: 40px;
+  padding: 1px 0 0 0;
+  color: #7c848d;
+  background: transparent;
+  border-bottom: 1px solid #dbdee0;
+  border-top: 1px solid #dbdee0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+ul li .dropmenu i,
+ul li .submenu i {
+  margin-right: 10px;
+  margin-left: 0px;
+  height: 40px;
+  width: 40px;
+  padding: 13px 0;
+  display: inline-block;
+  text-align: center;
+  border-right: 1px solid #dbdee0;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+ul li .dropmenu i:before,
+ul li .submenu i:before {
+  content: "\f005";
+}
+ul li .dropmenu .hidden-sm,
+ul li .submenu .hidden-sm {
+  display: inline-block !important;
+}
+ul li .dropmenu .chevron,
+ul li .submenu .chevron {
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 2px;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  padding: 12px 0;
+  display: inline-block;
+  text-align: center;
+  font-size: 10px;
+  color: #b2b8bd!important;
+  border-left: 1px solid #dbdee0;
+}
+ul li .dropmenu .chevron:after,
+ul li .submenu .chevron:after {
+  height: 100%;
+  width: 100%;
+  content: "\f053";
+  text-shadow: none;
+}
+ul li .submenu {
+  left: 10px;
+}
+.sidebar-left {
+  width: 14.422%;
+  height: 100%;
+  padding: 10px;
+  z-index: 2;
+  float: left;
+  position: absolute;
+  min-height: 1px;
+}
+table {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 5%;
+  width: 88%;
+  box-sizing: border-box;
+}
+thead,
+tbody {
+  width: 100%;
+}
+td {
+  font-size: 14px;
+}
+input {
+  font-size: 14px;
+}
+textarea {
+  font-size: 14px;
+  overflow-y: visible;
+  wrap: physical;
+  width: 100%;
+  height: 18px;
+}
+.button {
+  position: relative;
+  left: 40%;
+  top: 5%;
+  margin-bottom: 20px;
+  width: 300px;
+  margin-top: 10px;
+}
+.t0 {
+  width: 98%;
+}
+.tt {
+  width: 98%;
+  height: auto;
+}
+.t1 {
+  width: 4%;
+}
+.t2 {
+  width: 14%;
+}
+.t3,
+.t4,
+.t5,
+.t7 {
+  width: 7%;
+}
+.t6 {
+  width: 30%;
+}
+.t8 {
+  width: 20%;
+}
+.add,
+.submit,
+.cancel {
+  margin-right: 5px;
+  box-sizing: border-box;
+  background: #36a9e1;
+  border: 0;
+  border-radius: 2px;
+  text-shadow: none;
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+}
+.add:hover,
+.submit:hover,
+.cancel:hover {
+  color: #fff;
+  border-color: #285e8e;
+  background-color: #1e8fc6;
+  text-decoration: none;
+}
+.add i,
+.submit i,
+.cancel i {
+  margin-top: 2px;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 4px;
+}
+.add i:before,
+.submit i:before,
+.cancel i:before {
+  content: "\f0f3";
+  box-sizing: border-box;
+}
+header {
+  position: relative;
+  color: white;
+  padding: 12px 20px 20px 20px!important;
+  margin: 0;
+  width: 100%;
+  min-height: 40px;
+  border: 0;
+  background: #34383c;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  z-index: 2;
+}
+header:before {
+  display: table;
+  content: " ";
+}
+header:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+footer {
+  background: #34383c;
+  color: white;
+  height: 40px;
+  padding: 12px 20px 20px 20px!important;
+  margin: 0!important;
+  position: relative;
+  z-index: 1;
+  font-size: 12px;
+  width: 100%;
+  bottom: 0;
+}
+.container.content {
+  padding: 10px;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+.container.additem {
+  padding: 10px;
+  margin: 0;
+  position: relative;
+  top: 0;
+  left: 15%;
+  width: 85%;
+}
+.container.additem .box {
+  padding: 10px;
+  border: 1px solid #dbdee0;
+}
+.container.additem .box .box-header {
+  position: relative;
+  left: 0;
+  right: 0;
+  border: 1px solid #dbdee0;
+  color: #34383c;
+  font-size: 16px;
+  overflow: hidden;
+  background: #f7f7f8;
+  height: 40px;
+}
+.container.additem .box .box-header h2 {
+  padding: 10px 0;
+  margin: 0 0 0 20px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+}
+.container.additem .box .box-header h2 i {
+  border-right: 1px solid #dbdee0;
+  color: #ced1d4;
+  padding: 12px 0;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  margin: -10px 20px -10px -20px;
+  font-size: 16px;
+  font-family: FontAwesome;
+}
+.container.additem .box .box-header h2 i:before {
+  content: "\f044";
+}
+.container.additem .box .box-header .box-icon {
+  position: relative;
+  float: right;
+  top: -40px;
+}
+.container.additem .box .box-header .box-icon a {
+  margin-left: -3px !important;
+  color: #34383c;
+  text-decoration: none;
+  background: transparent;
+}
+.container.additem .box .box-header .box-icon a i {
+  display: inline-block;
+  color: #ced1d4;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  padding: 12px 0;
+  transition: all 0.1s ease-in-out;
+  border-left: 1px solid #ced1d4;
+  text-decoration: none;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.container.additem .box .box-header .box-icon a i:before {
+  content: "\f002";
+}
+.container.additem table,
+.container.additem thead {
+  border: 1px solid #dbdee0;
+}
+table,
+tbody,
+tr {
+  width: 100% !important;
+}
+th {
+  text-align: left;
+}
+table {
+  max-width: 100%;
+  background-color: transparent;
+  padding: 10px;
+}
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.428571429;
+  vertical-align: top;
+}
+table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 1px solid #dddddd;
+}
+table > thead > tr > td {
+  border-bottom-width: 1px;
+}
+table > thead:first-child > tr:first-child > th,
+table > thead:first-child > tr:first-child > tr {
+  border-top: 0;
+}
+table > tbody > tr:nth-child(odd) > td {
+  background-color: #f9f9f9;
+}
+table > tbody > tr:hover > td,
+table > tbody > tr:hover > th {
+  background-color: #f5f5f5;
+}
+table > tbody + tbody {
+  border-top: 1px solid #dddddd;
+}
+/*# sourceMappingURL=subpackage.css.map */

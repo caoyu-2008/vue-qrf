@@ -1,0 +1,290 @@
+/**
+ * 1.0 - Normalize
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;box-sizing: border-box;
+}
+
+body {
+  line-height: 1.3;
+  font-size: 14px;
+  min-width:1000px;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a,a:hover {
+  text-decoration: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@-webkit-keyframes loader-ball-spin-fade {
+  50% {
+    opacity: 0.3;
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes loader-ball-spin-fade {
+  50% {
+    opacity: 0.3;
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.modal-layer {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-layer.modal-show {
+  display: block;
+}
+
+.modal-wrapper {
+  display: none;
+  z-index: 1100;
+}
+
+.modal-wrapper.modal-show {
+  display: block;
+}
+
+html {
+  height: 100%;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Microsoft Yahei", "Hiragino Sans GB", tahoma, arial, "\5B8B\4F53";
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+a {
+  -webkit-tap-highlight-color: transparent;text-decoration: none;
+}
+.clearFix,.clearfix{
+  zoom: 1;
+}
+.clearFix:after,.clearfix:after{
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.icons {
+  display: inline-block;
+  font-style: normal;
+}
+.flexBox{display: flex;}
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+.flex-align-center{
+  align-items: center;
+}
+.flex-justify-between{
+  justify-content: space-between;
+}
+
+.t-center{text-align: center;}
+.center{margin:0 auto;}
+.mr18{margin-right: 18px;}
+
+.headerBox{min-width: 1000px;height: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);position: relative;
+  z-index: 100;}
+.headerTitle{
+  background-color: #000;
+}
+
+.header{
+  width: 1000px;height: 100%;
+  .logoBox{
+    width: 144px;
+    .logo{
+      height: 100%;
+      img{
+        width: 118px;
+        height: 22px;}
+    }
+  }
+  .navList{
+    text-align: right;
+    >li{
+      width:118px; margin-right: 40px;
+      &:last-of-type{margin-right: 0;}
+      >a{color:#fff;display: block;text-align: center;line-height:56px; width: 118px;}
+      >a.index_active{
+        border-bottom: 4px solid #fff;
+      }
+      >a.active{
+        border-bottom: 4px solid #0266d9;
+      }
+      >a:hover{
+        border-bottom: 4px solid #0266d9;
+        ul{display: block;}
+      }
+      >ul{display: none;}
+      .advantageList{
+        width:118px; background: rgba(0, 0, 0, 0.5);
+        &.cc:hover{border-top: 4px solid #0266d9; display: block;}
+        >li{
+          height:54px;width: 100%; border-bottom: 1px solid rgba(165,165,168,.5);
+          a{color:#fff; font-size: 14px; text-align: center;
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height:50px;}
+          a:hover{color:#0266d9;}
+          a.active{color:#0266d9;}
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header{
+    width: 1000px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .header{
+    width: 1200px;
+  }
+}
+
+.footerBox{
+  background: #131618;
+  min-width:1000px;
+  .footer_header{
+    padding: 80px auto; position: relative; top:0; left: 0;
+    .line{
+      width: 60%; padding-top: 80px; border-bottom: 1px solid #fff; margin: 0 auto 80px;
+    }
+    .foot_title{
+      position: absolute; background-color: #131618; width: 30%; left: 50%; margin-left: -15%; top:44px; color:#fff; text-align: center;
+      h2{
+        font-size: 30px; line-height: 40px;
+      }
+      p{
+        font-size: 16px; line-height: 30px;
+      }
+    }
+  }
+}
+.footer-top{
+  width:1000px;padding:45px 0 22px 0;border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  .chinese{color:#fff;font-size: 13px; margin-bottom: 30px}
+  .follow{
+    margin-bottom: 0;
+  }
+  .english{color:#afafaf;font-size: 12px;margin:8px 0 8px 0;}
+  li,a{color:#afafaf;font-size: 12px;}
+  a:hover{color:#0266d9;}
+  #advantage{width: 200px;}
+  #friendshipLink{width: 265px;}
+  #contactInfo{width: 450px;}
+  li{margin-bottom: 16px;}
+  #followUs{
+    .wxImg{
+      width: 56px;
+      height: 56px;
+      background: url("../../images/sprite.png") 399px 0;}
+    .wxIcon,.wbIcon{
+      width: 20px;
+      height: 20px;background-image: url("../../images/sprite.png");}
+    .wxIcon{background-position: 332px -2px;}
+    .wbIcon{background-position: 306px -2px; margin-left: 16px;}
+    p{
+      color:#afafaf; margin: 8px 0;
+    }
+  }
+}
+.footer-bottom{
+  height: 50px;color:#b3b3b3;width:1000px;font-size: 12px;
+  line-height:50px;
+  .copyright{
+    text-align: center; margin: 0 auto;
+    .companyName{margin:0 20px 0 18px;}
+  }
+  .link{
+    a{padding:0 28px;color:#afafaf;}
+    a:hover{color:#02dd69;}
+    .aboutTR{border-left:1px solid #afafaf;border-right:1px solid #afafaf;}
+  }
+}
+
+#loadBanner {
+  width: 0px;
+  height: 0px;
+  position: fixed;
+  top: -1000px;
+  left: -1000px; }
